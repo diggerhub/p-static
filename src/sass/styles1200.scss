@@ -1,0 +1,27 @@
+@media only screen and (min-width: 1200px) {
+  .hero {
+    background-position: 0 30%;
+    background-size: 60%;
+    .call-to-action {
+      .action-container {
+        h1 {
+          font-size: 2.5vw;
+        }
+        span {
+          font-size: 1.5vw;
+          padding: 10px 0;
+        }
+      }
+
+      #hero-shape-desktop {
+        display: block;
+        margin-right: -5px;
+        height: 300px;
+        min-width: 100px;
+      }
+      #hero-shape-mobile {
+        display: none;
+      }
+    }
+  }
+}
