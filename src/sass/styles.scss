@@ -110,6 +110,40 @@
     margin: 10px auto;
   }
 }
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 10% 0;
+  .book {
+    img {
+      width: 40%;
+    }
+    .description {
+      float: left;
+      height: 100%;
+      width: 58%;
+      position: relative;
+      span:first-child {
+        font-size: 1.2em;
+      }
+      .stars {
+        color: $prime;
+      }
+      .order-button {
+        position: absolute;
+        bottom: 2px;
+        left: 10px;
+        font-family: $font-subheading;
+        color: white;
+        background: $prime;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+}
 
 .rtl {
   direction: rtl;

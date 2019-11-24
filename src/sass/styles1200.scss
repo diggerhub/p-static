@@ -60,4 +60,9 @@
       margin: 10px auto;
     }
   }
+  .book-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin: 5% 0;
+  }
 }
