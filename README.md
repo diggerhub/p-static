@@ -37,9 +37,6 @@ Run index.html from the dist folder
 ###### With the build tools
 Do `npm install` (on the first time) then use `gulp` command
 
-##### Dependencies
- [GlideJs](https://glidejs.com/)
-
 ##### Dev dependencies
 [nodeJs](https://nodejs.org)
 
