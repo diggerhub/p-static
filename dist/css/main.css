@@ -115,6 +115,64 @@ table {
   margin-bottom: -5px;
 }
 
+.book-list {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 4fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  overflow: hidden;
+  margin: 10% 0;
+}
+
+.book-list h3 {
+  grid-column: 1  / span 2;
+  grid-row: 1 / span 1;
+  font-size: 5vw;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.book-list ul {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  font-family: "Heebo", sans-serif;
+  font-size: 2.5vw;
+}
+
+.book-list ul li {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 2% 0;
+}
+
+.book-list ul li img {
+  margin: 0 5%;
+}
+
+.book-list > img {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  width: 150px;
+  margin: 30% 0 0 -15%;
+}
+
+@media only screen and (min-width: 499px) {
+  .book-list {
+    margin-top: 7%;
+  }
+  .book-list h3 {
+    font-size: 4vw;
+  }
+  .book-list > img {
+    width: 200px;
+    margin: 10% 0 0 -15%;
+  }
+}
+
 .rtl {
   direction: rtl;
 }
@@ -139,8 +197,8 @@ table {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: right;
-    justify-content: right;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
   }
   .hero .call-to-action .action-container {
     height: 300px;
@@ -196,6 +254,32 @@ table {
   .sub-heading .header-container span:first-child {
     margin-right: 20px;
   }
+  .book-list {
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 4fr;
+  }
+  .book-list h3 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    font-size: 3vw;
+  }
+  .book-list ul {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    font-size: 2vw;
+  }
+  .book-list ul li {
+    width: 50%;
+  }
+  .book-list > img {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    margin: 0 0 0 10%;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -218,5 +302,22 @@ table {
   }
   .hero .call-to-action #hero-shape-mobile {
     display: none;
+  }
+  .book-list {
+    margin-top: 5%;
+  }
+  .book-list h3 {
+    font-size: 2.5vw;
+  }
+  .book-list ul {
+    height: 200px;
+    font-size: 1.5vw;
+  }
+  .book-list ul li {
+    width: 50%;
+  }
+  .book-list > img {
+    width: 80%;
+    margin: 0 0 0 10%;
   }
 }

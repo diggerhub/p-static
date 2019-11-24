@@ -66,5 +66,30 @@
       }
     }
   }
+  .book-list {
+    height: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    h3 {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+      font-size: 3vw;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1 ;
+      font-size: 2vw;
+      li {
+        width: 50%;
+      }
+    }
+    & > img{
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 2;
+      margin: 0 0 0 10%;
+    }
+  }
 }
 
