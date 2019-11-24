@@ -106,5 +106,19 @@
       margin: 15px auto;
     }
   }
+  .book-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 10% 0;
+  }
+  .video {
+    iframe {
+      left: 10%;
+      width: 80%;
+      max-height: 600px;
+      max-width: 1066.67px ;
+    }
+  }
 }
 
